@@ -3,7 +3,7 @@ from elasticsearch_dsl import DocType, Q, F
 from elasticsearch_dsl.document import DOC_META_FIELDS, META_FIELDS
 from elasticsearch_dsl.field import Boolean, Integer, String, Nested, Date, Object
 
-from blog.models import Post
+from seed.blog.models import Post
 
 class AlreadyExistsError(Exception):
     """

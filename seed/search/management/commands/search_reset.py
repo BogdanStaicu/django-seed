@@ -2,8 +2,8 @@ from django.conf import settings
 from django.core.management import BaseCommand, CommandError
 from elasticsearch_dsl.connections import connections
 
-from blog.models import Post
-from search.models import PostES
+from seed.blog.models import Post
+from seed.search.models import PostES
 
 
 class Command(BaseCommand):

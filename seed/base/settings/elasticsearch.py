@@ -1,5 +1,5 @@
 ELASTICSEARCH_HOSTS = [
-    'http://10.11.12.14:9200/',
+    'http://127.0.0.1:9200/',
 ]
 
 ES_INDICES_SETTINGS = {

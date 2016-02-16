@@ -5,7 +5,7 @@ from rest_framework.views import Response
 from rest_framework.viewsets import ModelViewSet
 from serializers import AuthorSerializer, TagSerializer, CategorySerializer, PostSerializer
 
-from blog.models import Author, Category, Post, Tag
+from seed.blog.models import Author, Category, Post, Tag
 
 class AuthorViewSet(ModelViewSet):
     serializer_class = AuthorSerializer

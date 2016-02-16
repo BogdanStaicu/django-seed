@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATIC_ROOT_FOLDER = 'static'
-STATIC_ROOT = '/srv/advisordeck/webroot'
+STATIC_ROOT = '/home/docker/volatile/static'
+MEDIA_ROOT = '/home/docker/persistent/media'
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,7 +42,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
 
-    'blog',
+    'seed.blog',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -55,7 +56,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'base.urls'
+ROOT_URLCONF = 'seed.base.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'base.wsgi.application'
+WSGI_APPLICATION = 'seed.base.wsgi.application'
 
 
 # Database

@@ -17,7 +17,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from rest_framework_extensions.routers import ExtendedDefaultRouter
 
-from blog.api import views as blog_api_views
+from seed.blog.api import views as blog_api_views
 
 router = ExtendedDefaultRouter()
 

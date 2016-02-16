@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from blog.models import Author, Category, Post, Tag
+from seed.blog.models import Author, Category, Post, Tag
 
 
 class AuthorSerializer(serializers.ModelSerializer):
