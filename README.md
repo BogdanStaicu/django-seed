@@ -71,7 +71,7 @@ Multiple statements on one line are a cardinal sin. In Python, readability count
 - Use `for idx, item in enumerate(list):` to loop over a list and having access to both index and data
 - Use `sorted(list, key=func)` to sort a list by the result of the 'key' function for each item in the list
 - Use the new style string formatting: `'{} {}'.format('one', 'two')` (https://pyformat.info/)
-- Use list comprehentions instead of a simple `for` but remember that readability counts
+- Use list comprehensions instead of a simple `for` but remember that readability counts
 - Use generator expressions instead of list comprehentions when the computed list is just an indermediate step
 - Use the simplest option that could possibly work. Don't use a regular expression if you just want to see if a string starts with a particular substring: use `.startswith` instead. Don't use `.index` if you just want to see if a string contains a particular letter: use `in` instead.
 - Don’t use the `dictionary.has_key()` method. Instead, use `x in dictionary` syntax, or pass a default argument to `dictionary.get()`.
