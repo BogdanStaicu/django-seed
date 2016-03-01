@@ -7,6 +7,7 @@
 1. Grab IP - `docker-machine ip dev` - and view in your browser
  
 
+
     > More: https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/
 
 # Python Coding Guidelines
