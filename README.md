@@ -6,7 +6,7 @@
 1. Apply migrations - `docker-compose run web /usr/local/bin/python manage.py migrate`
 1. Grab IP - `docker-machine ip dev` - and view in your browser  
 
-    > More: https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/
+> More: https://realpython.com/blog/python/django-development-with-docker-compose-and-machine/
 
 # Python Coding Guidelines
 
