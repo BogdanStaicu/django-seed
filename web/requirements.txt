@@ -1,0 +1,9 @@
+Django==1.9
+djangorestframework
+elasticsearch
+elasticsearch_dsl
+drf-extensions
+django-filter
+psycopg2
+gunicorn
+redis
