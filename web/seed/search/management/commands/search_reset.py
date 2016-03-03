@@ -15,6 +15,5 @@ class Command(BaseCommand):
         es.indices.delete('blog-search')
 
         es.indices.create('blog-search', settings.ES_INDICES_SETTINGS)
-
         for post in Post.objects.all():
             PostES.index_post(post)

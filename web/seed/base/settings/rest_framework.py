@@ -8,7 +8,6 @@ REST_FRAMEWORK = {
     #     allow unrestricted access only for platform superusers
     # 'advisordeck.utils.api.permissions.IsSuperUser',
     # ),
-    # TODO: set up throttling - temp disabled for performance testing
     # 'DEFAULT_THROTTLE_CLASSES': (
     #     'rest_framework.throttling.AnonRateThrottle',
     #     'rest_framework.throttling.UserRateThrottle',
