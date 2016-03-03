@@ -1,5 +1,7 @@
+import os
+
 ELASTICSEARCH_HOSTS = [
-    'http://127.0.0.1:9200/',
+    'http://{}:9200/'.format(os.environ.get('ELASTICSEARCH_PORT_9200_TCP_ADDR', '0.0.0.0')),
 ]
 
 ES_INDICES_SETTINGS = {

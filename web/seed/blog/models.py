@@ -7,7 +7,7 @@ class Author(models.Model):
     '''
     Define the Author Table
     '''
-    name=models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     email = models.EmailField(unique=True)
     bio = models.TextField()
     def __str__(self):
@@ -24,7 +24,7 @@ class Category(models.Model):
 
 
 class Tag(models.Model):
-    tag_name =models.CharField(max_length=50)
+    tag_name = models.CharField(max_length=50)
     tag_description = models.CharField(max_length=255)
     def __str__(self):
         return self.tag_name
@@ -43,5 +43,5 @@ class Post(models.Model):
 
 @receiver(models.signals.post_save, sender=Post, dispatch_uid='seed.blog.post_update')
 def add_card_source(instance, *args, **kwargs):
-    from search.models import PostES
+    from seed.search.models import PostES
     PostES.index_post(instance)

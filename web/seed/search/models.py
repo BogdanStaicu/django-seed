@@ -1,5 +1,5 @@
 from elasticsearch import NotFoundError
-from elasticsearch_dsl import DocType, Q, F
+from elasticsearch_dsl import DocType
 from elasticsearch_dsl.document import DOC_META_FIELDS, META_FIELDS
 from elasticsearch_dsl.field import Boolean, Integer, String, Nested, Date, Object
 
@@ -64,8 +64,8 @@ class PostES(BaseESMixin, DocType):
         post_es.created_date = obj.created_date
         post_es.updated_date = obj.updated_date
         post_es.author = obj.author.name
-        post_es.categories = [cat.name for cat in obj.categories.all()]
-        post_es.tags = [tag.name for tag in obj.tags.all()]
+        post_es.categories = [cat.cat_name for cat in obj.categories.all()]
+        post_es.tags = [tag.tag_name for tag in obj.tags.all()]
 
         post_es.save()
         return post_es

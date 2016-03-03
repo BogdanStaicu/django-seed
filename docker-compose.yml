@@ -6,6 +6,7 @@ web:
   links:
     - postgres:postgres
     - redis:redis
+    - elasticsearch:elasticsearch
   volumes:
     - ./web:/usr/src/app
     - ./web/seed/base/static:/usr/src/app/static
@@ -37,6 +38,12 @@ redis:
   image: redis:latest
   ports:
     - "6379:6379"
+
+elasticsearch:
+  restart: always
+  image: elasticsearch:latest
+  ports:
+    - "9200:9200"
 
 data:
   restart: always
