@@ -40,7 +40,7 @@ class BaseESMixin(object):
 
 
 class PostES(BaseESMixin, DocType):
-    MATCH_FIELDS = ['name', 'domain']
+    MATCH_FIELDS = ['title', 'author', 'body']
 
     title = String()
     body = String()
